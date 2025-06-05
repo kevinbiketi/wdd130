@@ -170,3 +170,19 @@ footer a:hover {
   background-color: #005fa3; /* Darker blue on hover */
   color: #fff;
 }
+button[type="submit"] {
+  background-color: #0077cc; /* Main button color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3; /* Darker color on hover */
+}
