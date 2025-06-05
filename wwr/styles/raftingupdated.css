@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5faff;
+  color: #333;
+}
+
+/* === Header: Grid Layout === */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr 2fr;
+  align-items: center;
+  background-color: #004b6b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+/* === Navigation: Flex Layout === */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a7d9f5;
+}
+
+/* === Main Content === */
+main {
+  padding: 2rem;
+}
+
+/* === History Section === */
+.history {
+  background-color: #e6f2f8;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00334d;
+  text-align: center;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* === Adventures Section === */
+.adventures {
+  padding: 2rem;
+}
+
+.adventures h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #00334d;
+}
+
+.adventure-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.adventure-gallery figure {
+  width: 180px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #00334d;
+}
+
+/* === Footer === */
+footer {
+  background-color: #004b6b;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socials a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+footer .socials a img:hover {
+  transform: scale(1.1);
+}
