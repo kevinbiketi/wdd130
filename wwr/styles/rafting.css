@@ -1,3 +1,194 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5faff;
+  color: #333;
+}
+
+/* === Header: Grid Layout === */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr 2fr;
+  align-items: center;
+  background-color: #004b6b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+header img {
+  width: 80px;
+  height: auto;
+}
+
+header h1 {
+  margin-left: 1rem;
+  font-size: 1.8rem;
+}
+
+/* === Navigation: Flex Layout === */
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a7d9f5;
+}
+
+/* === Main Content === */
+main {
+  padding: 2rem;
+}
+
+/* === History Section === */
+.history {
+  background-color: #e6f2f8;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.history h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00334d;
+  text-align: center;
+}
+
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+/* === Adventures Section === */
+.adventures {
+  padding: 2rem;
+}
+
+.adventures h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #00334d;
+}
+
+.adventure-gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.adventure-gallery figure {
+  width: 180px;
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #00334d;
+}
+
+/* === Footer === */
+footer {
+  background-color: #004b6b;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+footer .socials a img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+footer .socials a img:hover {
+  transform: scale(1.1);
+}
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+footer a {
+  color: #ffffff; /* White text for contrast */
+  background-color: #0077cc; /* A blue background for visibility */
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+footer a:hover {
+  background-color: #005fa3; /* Darker blue on hover */
+  color: #fff;
+}
+button[type="submit"] {
+  background-color: #0077cc; /* Main button color */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+button[type="submit"]:hover {
+  background-color: #005fa3; /* Darker color on hover */
+}
+/* styling for about.html file/*
+
 /* CSS Variables */
 :root {
   --primary-color: #1e6091;
@@ -124,4 +315,192 @@ nav a {
 .socialmedia img {
   height: 30px;
   width: 30px;
+}
+
+/* styling index.html/*
+
+/* Hero Section */
+.hero {
+  position: relative;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.hero-text {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+  text-align: center;
+  padding: 2rem;
+}
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  background: #0077cc;
+  color: white;
+  padding: 2rem;
+}
+.cta-button {
+  background: white;
+  color: #0077cc;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Grid Layout */
+.grid-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+.grid-item img {
+  width: 100%;
+  height: auto;
+}
+.grid-item p {
+  padding: 1rem 0;
+}
+/* Header */
+header {
+  background-color: #004080; /* Dark blue */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #004080; /* Dark blue */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer nav a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  text-decoration: underline;
+}
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.hero-text {
+  position: absolute;
+  top: 20%;              /* Pushes it lower from the top */
+  left: 50%;
+  transform: translateX(-50%);  /* Horizontally centers only */
+  font-size: 3rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+.hero-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 90%;           /* Prevents it from overflowing on small screens */
+  width: 600px;             /* Limits width on larger screens */
+  font-size: 2.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+main {
+  padding: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.trip {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+table, th, td {
+  border: 1px solid #333;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+caption {
+  caption-side: top;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
